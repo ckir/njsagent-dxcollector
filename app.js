@@ -97,7 +97,6 @@ new Logger(bunyanoptions, process.env.NBGC_AES, process.env.NBGC_KEY, calendar_l
     dxdata.on('fail', function() {
         // ...could not connect to any server.
         log.error('Could not connect to any server.');
-        client.end();
         setTimeout(function() {
             process.exit(1);
         }, 2000);
